@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Exercício - Parte 1</title>
+
+    <style>
+        /*
+         * Primeiro, eu zerei a margem padrão do body.
+         * Isso evita espaçamentos indesejados que os navegadores colocam.
+        */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif; /* Escolhi uma fonte simples por enquanto */
+        }
+
+        /*
+         * Aqui eu faço a estilização do meu contêiner principal.
+        */
+        .container {
+            /*
+             * Defini a largura em 80%, como foi pedido no exercício.
+            */
+            width: 80%;
+
+            /*
+             * Para centralizar, usei o truque do 'margin: 0 auto'.
+            */
+            margin: 0 auto;
+
+            /*
+             * Escolhi uma cor de fundo para deixar o contêiner visível.
+            */
+            background-color: #f0f0f0;
+
+            /*
+             * Coloquei um padding para criar um espaçamento interno.
+            */
+            padding: 20px;
+            
+            /*
+             * AQUI ESTÁ A SOLUÇÃO:
+             * Defini uma altura mínima para o contêiner não encolher
+             * mesmo estando vazio. Assim ele mantém um tamanho fixo.
+            */
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"></div>
+
+</body>
+</html>
