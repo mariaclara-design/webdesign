@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Exercício - Parte 2 (Corrigido)</title>
+
+    <style>
+        /* ESTILOS DA PARTE 1 (sem alterações) */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        /* ---------------------------------------------- */
+        /* --- INÍCIO DOS MEUS ESTILOS DA PARTE 2 --- */
+        /* ---------------------------------------------- */
+
+        /*
+         * Estilizei o cabeçalho (<header>) que criei.
+         * Usei display: flex para alinhar os itens (logo e menu) lado a lado.
+        */
+        .header {
+            border: 2px dotted #aaa;
+            padding: 20px;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /*
+         * Criei o espaço para o logotipo, como um quadrado.
+        */
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #5bacee; /* Um azul parecido com o do exemplo */
+        }
+
+        /*
+         * Zerei os estilos padrão da lista <ul> do menu.
+        */
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /*
+         * Usei o display: inline-block em cada <li> para alinhar os itens.
+        */
+        .menu li {
+            display: inline-block;
+            /*
+             * AQUI ESTÁ A CORREÇÃO:
+             * Diminuí a margem para os itens caberem na tela.
+            */
+            margin-left: 10px; 
+        }
+
+        /*
+         * Estilizei os links <a> do menu.
+        */
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            
+            <div class="logo"></div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+    </div>
+
+</body>
+</html>

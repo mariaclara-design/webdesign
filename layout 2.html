@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Exercício - Parte 2</title>
+
+    <style>
+        /* ESTILOS DA PARTE 1 (sem alterações) */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        /* ---------------------------------------------- */
+        /* --- INÍCIO DOS MEUS ESTILOS DA PARTE 2 --- */
+        /* ---------------------------------------------- */
+
+        /*
+         * Estilizei o cabeçalho (<header>) que criei.
+         * A borda pontilhada é para deixar a área de navegação visível, como o exercício pediu.
+         * Usei display: flex para conseguir alinhar os itens (logo e menu) lado a lado.
+         * justify-content: space-between; joga o primeiro item (logo) para a esquerda
+         * e o último item (menu) para a direita.
+         * align-items: center; alinha os dois verticalmente no centro do cabeçalho.
+        */
+        .header {
+            border: 2px dotted #aaa;
+            padding: 20px;
+            margin-bottom: 20px; /* Adicionei uma margem para separar do conteúdo abaixo */
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /*
+         * Criei o espaço para o logotipo, como um quadrado.
+         * O exercício pedia para ele ter uma cor de fundo.
+        */
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #5bacee; /* Um azul parecido com o do exemplo */
+        }
+
+        /*
+         * Para o menu de navegação, comecei resetando os estilos padrão da lista <ul>.
+         * Zerei a margem e o padding e tirei as bolinhas (bullet points).
+        */
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /*
+         * Para alinhar os itens do menu um ao lado do outro,
+         * usei o display: inline-block em cada <li>.
+        */
+        .menu li {
+            display: inline-block;
+            margin-left: 15px; /* Criei um espaçamento entre as opções do menu */
+        }
+
+        /*
+         * Por fim, estilizei os links <a> do menu.
+         * Tirei o sublinhado e defini uma cor.
+        */
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            
+            <div class="logo"></div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <h1>Contêiner Centralizado</h1>
+        <p>Este bloco tem 80% de largura e está centralizado na página.</p>
+
+    </div>
+
+</body>
+</html>
