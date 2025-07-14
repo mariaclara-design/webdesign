@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Exercício - Projeto Final</title>
+
+    <style>
+        /* --- Estilos Base (Desktop) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .seccao {
+            border: 2px dotted #5bacee;
+            min-height: 250px;
+            padding: 20px;
+        }
+        .seccao:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        .seccao .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #5bacee;
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .menu li {
+            display: inline-block;
+            margin-left: 10px; 
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .blocos-paralelos {
+            display: flex;
+            gap: 20px;
+        }
+        .bloco {
+            border: 2px dotted #5bacee;
+            min-height: 150px;
+            flex: 1;
+        }
+        .bloco:nth-child(2) {
+            flex: 2;
+        }
+        
+        /* --- Parte 5: Estilos para Responsividade --- */
+
+        @media (max-width: 768px) {
+            
+            .container {
+                width: 95%;
+            }
+
+            .seccao .header {
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+            }
+
+            /* --- MUDANÇAS PARA GANHAR ESPAÇO --- */
+
+            /* 1. Diminui o logo em telas menores */
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .menu ul {
+                display: flex;
+                flex-wrap: wrap;
+                /* 2. Diminui o espaço entre os itens do menu */
+                gap: 5px 8px;
+                justify-content: flex-start;
+            }
+
+            .menu li {
+                margin-left: 0;
+            }
+
+            /* 3. Diminui a fonte dos links do menu */
+            .menu a {
+                font-size: 14px;
+            }
+            /* --- FIM DAS MUDANÇAS --- */
+
+            .blocos-paralelos {
+                flex-direction: column;
+            }
+
+            .bloco:last-child {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <section class="seccao">
+            <header class="header">
+                <div class="logo"></div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                        <li><a href="#">Menu 4</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section class="seccao">
+            <div class="blocos-paralelos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+        </section>
+
+        <section class="seccao">
+            </section>
+
+    </div>
+
+</body>
+</html>
