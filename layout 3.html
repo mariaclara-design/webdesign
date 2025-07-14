@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Exercício - Parte 3</title>
+
+    <style>
+        /* --- Estilos Base (Parte 1 e 2) --- */
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto; /* Centraliza o contêiner */
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #5bacee;
+        }
+        
+        /* Remove estilos padrão da lista do menu */
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Alinha os itens do menu horizontalmente */
+        .menu li {
+            display: inline-block;
+            margin-left: 10px; 
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* --- Estilos da Parte 3 --- */
+
+        /* Estilo para as seções, tornando-as visíveis com borda e altura mínima */
+        .seccao {
+            border: 2px dotted #5bacee;
+            min-height: 250px;
+            padding: 20px;
+        }
+        
+        /* Adiciona margem abaixo de todas as seções, exceto a última */
+        .seccao:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        /*
+         * O header dentro de uma seção.
+         * Usa Flexbox para alinhar o logo e o menu lado a lado.
+        */
+        .seccao .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <section class="seccao">
+            <header class="header">
+                <div class="logo"></div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                        <li><a href="#">Menu 4</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section class="seccao">
+            </section>
+
+        <section class="seccao">
+            </section>
+
+    </div>
+
+</body>
+</html>
